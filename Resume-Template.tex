@@ -1,0 +1,196 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/jakegut/resume
+% License : MIT
+%------------------------
+\documentclass[letterpaper,12pt]{article} % Need more space? Change 12pt to 11pt.
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{fontawesome5} % fontawesome5 is for the emojis :)
+\usepackage{hyperref}
+\input{glyphtounicode}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.4in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+% ##############################
+% ####  RESUME STARTS HERE  ####
+% ##############################
+\begin{document}
+\vspace*{-1.45cm}
+\begin{center}
+    \textbf{\Huge \scshape Your Name} \\ \vspace{6pt}
+    \faPhone\ \small (123) 456 - 7890 $|$ \href{your@email.edu}
+    {\faEnvelope\ \underline{your@email.edu}} $|$ 
+    \faLinkedin\ \href{https://www.linkedin.com/in/.../}
+    {\underline{linkedin.com/in/...}} $|$
+    \faGithub\ \href{https://github.com/...}{\underline{github.com/...}}
+\end{center}
+% ######################################
+% ############ OBJECTIVE ###############
+% #######################################
+\section{\textbf{OBJECTIVE}}
+\vspace{0.1em}
+  \resumeSubHeadingListStart
+    \item{
+      \small{
+      Fill in...
+      }
+    }
+      \vspace{-0.5em}
+  \resumeSubHeadingListEnd
+% ######################################
+% ############ EDUCATION ###############
+% ######################################
+\section{\textbf{EDUCATION}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Master of Science in ...}{\normalsize\textbf{Aug. 20XX - Aug. 20XX}}
+      {School Name}{Location}
+          \resumeItem{{Courses}: One, Two, Three, ...}
+    \resumeSubheading
+      {\normalsize Bachelor of Science in ...}{\normalsize\textbf{Aug. 20XX - Aug. 20XX}}
+      {School Name}{Location}
+  \resumeSubHeadingListEnd
+% #############################################
+% ############ TECHNICAL SKILLS ###############
+% #############################################
+\section{\textbf{TECHNICAL SKILLS}}
+ \begin{itemize}[leftmargin=1em, label={}]
+    \small{\item{
+     \textbf{Frameworks}{: 1, 2, 3...} \\[3pt]
+     \textbf{Software}{: 1, 2, 3...} \\[3pt]
+     \textbf{Development Tools}{: 1, 2, 3...} \\[3pt]
+     \textbf{Code Languages}{: 1, 2, 3...} \\[3pt]
+    }}
+ \end{itemize}
+ % #######################################
+ % ############ EXPERIENCE ###############
+ % #######################################
+\section{\textbf{EXPERIENCE}}
+  \resumeSubHeadingListStart
+%----------- Job 3 -----------
+    \resumeSubheading
+      {Job 3}{\textbf{Aug. 20XX - Aug. 20XX}}
+      {Company Name}{Location}
+      \resumeItemListStart
+        \resumeItem{...}
+        \resumeItem{...}
+        \resumeItem{...}
+    \resumeItemListEnd
+%----------- Job 2 -----------
+    \resumeSubheading
+      {Job 2}{\textbf{Aug. 20XX - Aug. 20XX}}
+      {Company Name}{Location}
+      \resumeItemListStart
+        \resumeItem{...}
+        \resumeItem{...}
+        \resumeItem{...}
+    \resumeItemListEnd
+%----------- Job 1 -----------
+    \resumeSubheading
+      {Job 1}{\textbf{Aug. 20XX - Aug. 20XX}}
+      {Company Name}{Location}
+      \resumeItemListStart
+        \resumeItem{...}
+        \resumeItem{...}
+        \resumeItem{...}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+% #####################################
+% ############ PROJECTS ###############
+% #####################################
+\section{\textbf{PROJECTS}}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+%----------- Project 1 -----------
+          {\textbf{Project 1 Name} $|$ \emph{Tool 1, Tool 2, Tool 3, ...}}{\textbf{Aug. 20XX - Aug. 20XX}}
+          \resumeItemListStart
+            \resumeItem{...}
+      \resumeItemListEnd
+      \vspace{-0.3em}
+%----------- Project 2 -----------
+            \resumeProjectHeading
+          {\textbf{Project 2 Name} $|$ \emph{Tool 1, Tool 2, Tool 3, ...}}{\textbf{Aug. 20XX - Aug. 20XX}}
+          \resumeItemListStart
+            \resumeItem{...}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+% #######################################
+% ############ ACTIVITIES ###############
+% #######################################
+\section{\textbf{ACTIVITIES}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Activity Name}{\bfseries{Aug. 20XX - Aug. 20XX}}
+      {Activity Name}{Location}
+      \resumeItemListStart
+        \vspace{0.3em}
+        \resumeItem{...}
+        \vspace{0.3em}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+% ###########
+% ### END ###
+% ###########
+\end{document} 
